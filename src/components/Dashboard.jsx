@@ -369,7 +369,7 @@ export default function Dashboard() {
         <CustomCardTwo img={customCardd8} />
       </CustomCarousal>
       <Lobby />
-      <img src={lastPart} width="100%" alt="Last part" />
+      <img src={lastPart} width="100%" style={{marginTop:"25px"}} alt="Last part" />
     </section>
   );
 }
