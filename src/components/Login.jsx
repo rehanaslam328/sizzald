@@ -70,10 +70,6 @@ const Signin = () => {
         }}
       >
         <Box
-          sx={{
-
-            padding: '10px',
-          }}
         >
           <Box sx={{ mt: '60px' }}>
             <Typography
