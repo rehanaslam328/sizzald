@@ -1,4 +1,4 @@
-import { Typography, Box, IconButton } from "@mui/material";
+import { Typography, Box, IconButton, Grid, Button } from "@mui/material";
 import CustomCard from "../ui-components/CustomCard";
 import { useRef } from "react";
 import CustomCarousal from "../ui-components/CustomCarousal";
@@ -22,6 +22,8 @@ import customCardd6 from ".././assets/customCardd6.png";
 import customCardd7 from ".././assets/customCardd7.png";
 import customCardd8 from ".././assets/customCardd8.png";
 import customCardd9 from ".././assets/customCardd9.png";
+import lastPart from "../assets/last-part-sizzald.png";
+import tabPart from "../assets/tabs-part.png";
 
 export default function Dashboard() {
   const slider = React.useRef(null);
@@ -208,6 +210,24 @@ export default function Dashboard() {
         <CustomCardTwo img={customCardd1} />
         <CustomCardTwo img={customCardd2} />
       </CustomCarousal>
+      <Grid spacing={2}>
+        <Grid item xs={8}>
+          <Typography
+            sx={{
+              fontSize: "24px",
+              fontWeight: "700",
+              lineHeight: "40px",
+              letterSpacing: "1px",
+              color: "white",
+              paddingLeft: "19px",
+              paddingTop: "20px",
+            }}
+          >
+            CASINO
+          </Typography>
+        </Grid>
+      </Grid>
+      <img src={tabPart} width="100%" alt="atbs part" />
       <Box
         sx={{
           textAlign: "right",
@@ -349,6 +369,7 @@ export default function Dashboard() {
         <CustomCardTwo img={customCardd8} />
       </CustomCarousal>
       <Lobby />
+      <img src={lastPart} width="100%" alt="Last part" />
     </section>
   );
 }
